@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Weselna Jaka To Melodia</title>
+</head>
+<body>
+    <div id="menu">
+        <table>
+            <tr><td class="song-num"><button onclick="loadSong(1)">1</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(2)">2</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(3)">3</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(4)">4</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(5)">5</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(6)">6</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(7)">7</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(8)">8</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(9)">9</button></td></tr>
+            <tr><td class="song-num"><button onclick="loadSong(10)">10</button></td></tr>
+        </table>
+        <audio id="player">
+            <source id="sourceMp3" src="" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+    </div>
+    <div id="content">
+        <!-- <img src="static/img/robert-janowski.jpg" alt=""> -->
+        <div id="stopwatch">
+            <p><span id="seconds"></span></p>
+            <button id="button-stopwatch">Start/Stop</button>
+            <div id="answers">
+                <form onsubmit="event.preventDefault(); checkSong();">
+                    <select id="ddlViewBy">
+                        <option value="Wybierz odpowiedź" selected="selected">Wybierz odpowiedź</option>
+                        <option value="1">Adele - Hello</option>
+                        <option value="2">Ed Sheeran - Shape of You</option>
+                        <option value="3">Billie Eilish - Bad Guy</option>
+                        <option value="4">The Weeknd - Blinding Lights</option>
+                        <option value="5">Bruno Mars - Uptown Funk</option>
+                        <option value="6">Taylor Swift - Blank Space</option>
+                        <option value="7">Justin Bieber - Sorry</option>
+                        <option value="8">Maroon 5 - Sugar</option>
+                        <option value="9">Dua Lipa - Don't Start Now</option>
+                        <option value="10">Post Malone - Circles</option>
+                        <option value="11">Katy Perry - Roar</option>
+                        <option value="12">Camila Cabello - Havana</option>
+                        <option value="13">Drake - In My Feelings</option>
+                        <option value="14">Shawn Mendes - Senorita</option>
+                        <option value="15">Rihanna - Diamonds</option>
+                        <option value="16">Imagine Dragons - Radioactive</option>
+                        <option value="17">Ariana Grande - Thank U, Next</option>
+                        <option value="18">Khalid - Location</option>
+                        <option value="19">Coldplay - Viva La Vida</option>
+                        <option value="20">Lizzo - Truth Hurts</option>
+                        <option value="21">Lewis Capaldi - Someone You Loved</option>
+                        <option value="22">Selena Gomez - Lose You to Love Me</option>
+                        <option value="23">Eminem - Lose Yourself</option>
+                        <option value="24">Beyoncé - Single Ladies</option>
+                        <option value="25">John Legend - All of Me</option>
+                        <option value="26">Sia - Cheap Thrills</option>
+                        <option value="27">The Chainsmokers - Closer</option>
+                        <option value="28">Lady Gaga - Poker Face</option>
+                        <option value="29">Sam Smith - Stay with Me</option>
+                        <option value="30">Usher - Yeah!</option>
+                        <option value="31">OneRepublic - Counting Stars</option>
+                        <option value="32">Miley Cyrus - Wrecking Ball</option>
+                        <option value="33">Alicia Keys - No One</option>
+                        <option value="34">The Black Eyed Peas - I Gotta Feeling</option>
+                        <option value="35">Cardi B - Bodak Yellow</option>
+                        <option value="36">Megan Thee Stallion - Savage</option>
+                        <option value="37">Justin Timberlake - Can't Stop the Feeling!</option>
+                        <option value="38">Adele - Rolling in the Deep</option>
+                        <option value="39">P!nk - Just Give Me a Reason</option>
+                        <option value="40">Whitney Houston - I Will Always Love You</option>
+                    </select>
+                    <button>Zatwierdź wybór</button>
+                  </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="static/script.js"></script>
+</html>
