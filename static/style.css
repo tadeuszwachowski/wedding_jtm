@@ -8,13 +8,16 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('img/robert-janowski.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #menu {
     width: 20vw;
     height: 99.5vh;
     float: left;
-    background-color: blue;
+    /* background-color: blue; */
     align-items: center;
 }
 
@@ -47,11 +50,15 @@ body {
 #content {
     width: 80vw;
     height: 99.5vh;
-    background-image: url('img/robert-janowski.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('img/robert-janowski.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     /* background-color: red; */
     float: left;
+}
+
+#content::before {
+    background-color: rgba(0,0,0,0.9);
 }
 
 #content img {
@@ -66,7 +73,7 @@ body {
     position: relative;
     top: 200px;
     /* left: 20vw; */
-    color: white;
+    color: black;
     text-align: center;
     font-size: 40px;
 }
